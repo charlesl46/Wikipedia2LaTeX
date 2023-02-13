@@ -1,21 +1,31 @@
-.. test documentation master file, created by
-   sphinx-quickstart on Sun Feb 12 18:23:09 2023.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Wikipedia2LaTeX's documentation
+===============================
 
-Welcome to test's documentation!
-================================
+.. admonition:: Note
+   :class: note
+
+   This package is under active maintenance
+
+Installation
+------------
+
+To use Wikipedia2LaTeX, first install it using pip:
+
+.. code-block:: console
+
+   (.venv) $ pip install Wikipedia2LaTeX
+
+Usage
+-----
+
+.. code-block:: console
+
+   (.venv) $ command
+
+Check out the :doc:`usage` section for further information.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
    
    modules
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

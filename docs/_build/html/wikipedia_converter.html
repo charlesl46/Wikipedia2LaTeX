@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="prev" title="src" href="modules.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="prev" title="&lt;no title&gt;" href="modules.html" />
 
     <!-- Generated with Sphinx 5.3.0 and Furo 2022.12.07 -->
         <title>wikipedia_converter module - Wikipedia2LaTeX 1.0.0 documentation</title>
@@ -165,10 +165,7 @@
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current has-children"><a class="reference internal" href="modules.html">src</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">wikipedia_converter module</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">wikipedia_converter module</a></li>
 </ul>
 
 </div>
@@ -209,15 +206,64 @@
 <dt class="sig sig-object py" id="wikipedia_converter.WikipediaArticle">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wikipedia_converter.</span></span><span class="sig-name descname"><span class="pre">WikipediaArticle</span></span><a class="reference internal" href="_modules/wikipedia_converter.html#WikipediaArticle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wikipedia_converter.WikipediaArticle" title="Permalink to this definition">#</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class to manage a wikipedia article and its convertion to LaTeX</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="wikipedia_converter.WikipediaArticle.accents">
-<span class="sig-name descname"><span class="pre">accents</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'à':</span> <span class="pre">'#A1#',</span> <span class="pre">'â':</span> <span class="pre">'#A2#',</span> <span class="pre">'ä':</span> <span class="pre">'#A3#',</span> <span class="pre">'ç':</span> <span class="pre">'#C1#',</span> <span class="pre">'è':</span> <span class="pre">'#E2#',</span> <span class="pre">'é':</span> <span class="pre">'#E1#',</span> <span class="pre">'ê':</span> <span class="pre">'#E3#',</span> <span class="pre">'ë':</span> <span class="pre">'#E4#',</span> <span class="pre">'î':</span> <span class="pre">'#I2#',</span> <span class="pre">'ï':</span> <span class="pre">'#I1#',</span> <span class="pre">'ô':</span> <span class="pre">'#O1#',</span> <span class="pre">'ö':</span> <span class="pre">'#O2#',</span> <span class="pre">'ù':</span> <span class="pre">'#U1#',</span> <span class="pre">'û':</span> <span class="pre">'#U2#',</span> <span class="pre">'ü':</span> <span class="pre">'#U3#',</span> <span class="pre">'ÿ':</span> <span class="pre">'#Y1#'}</span></em><a class="headerlink" href="#wikipedia_converter.WikipediaArticle.accents" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">accents</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'à':</span> <span class="pre">'#A1#',</span> <span class="pre">'á':</span> <span class="pre">'#A4#',</span> <span class="pre">'â':</span> <span class="pre">'#A2#',</span> <span class="pre">'ä':</span> <span class="pre">'#A3#',</span> <span class="pre">'ç':</span> <span class="pre">'#C1#',</span> <span class="pre">'è':</span> <span class="pre">'#E2#',</span> <span class="pre">'é':</span> <span class="pre">'#E1#',</span> <span class="pre">'ê':</span> <span class="pre">'#E3#',</span> <span class="pre">'ë':</span> <span class="pre">'#E4#',</span> <span class="pre">'í':</span> <span class="pre">'#I3#',</span> <span class="pre">'î':</span> <span class="pre">'#I2#',</span> <span class="pre">'ï':</span> <span class="pre">'#I1#',</span> <span class="pre">'ñ':</span> <span class="pre">'#N1#',</span> <span class="pre">'ó':</span> <span class="pre">'#O3#',</span> <span class="pre">'ô':</span> <span class="pre">'#O1#',</span> <span class="pre">'ö':</span> <span class="pre">'#O2#',</span> <span class="pre">'ù':</span> <span class="pre">'#U1#',</span> <span class="pre">'ú':</span> <span class="pre">'#U4#',</span> <span class="pre">'û':</span> <span class="pre">'#U2#',</span> <span class="pre">'ü':</span> <span class="pre">'#U3#',</span> <span class="pre">'ÿ':</span> <span class="pre">'#Y1#'}</span></em><a class="headerlink" href="#wikipedia_converter.WikipediaArticle.accents" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wikipedia_converter.WikipediaArticle.all_sentences_but_first">
+<span class="sig-name descname"><span class="pre">all_sentences_but_first</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wikipedia_converter.html#WikipediaArticle.all_sentences_but_first"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wikipedia_converter.WikipediaArticle.all_sentences_but_first" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wikipedia_converter.WikipediaArticle.available_lang">
+<span class="sig-name descname"><span class="pre">available_lang</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['fr',</span> <span class="pre">'es',</span> <span class="pre">'en',</span> <span class="pre">'de',</span> <span class="pre">'it']</span></em><a class="headerlink" href="#wikipedia_converter.WikipediaArticle.available_lang" title="Permalink to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="wikipedia_converter.WikipediaArticle.convert_to_latex">
 <span class="sig-name descname"><span class="pre">convert_to_latex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wikipedia_converter.html#WikipediaArticle.convert_to_latex"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wikipedia_converter.WikipediaArticle.convert_to_latex" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Method to convert the mediawiki content to latex content</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wikipedia_converter.WikipediaArticle.decode_accents">
+<span class="sig-name descname"><span class="pre">decode_accents</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/wikipedia_converter.html#WikipediaArticle.decode_accents"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wikipedia_converter.WikipediaArticle.decode_accents" title="Permalink to this definition">#</a></dt>
+<dd><p>Exact inverse of encode_accents</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – the text to decode</p></li>
+<li><p><strong>accents</strong> (<em>dict</em>) – the accents dict</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the decoded text</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wikipedia_converter.WikipediaArticle.encode_accents">
+<span class="sig-name descname"><span class="pre">encode_accents</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">accents_inv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/wikipedia_converter.html#WikipediaArticle.encode_accents"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wikipedia_converter.WikipediaArticle.encode_accents" title="Permalink to this definition">#</a></dt>
+<dd><p>Function to encode the accents</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – the text to encode</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the encoded text</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="wikipedia_converter.WikipediaArticle.fetch_content">
@@ -226,26 +272,28 @@
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="wikipedia_converter.WikipediaArticle.first_sentence">
+<span class="sig-name descname"><span class="pre">first_sentence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wikipedia_converter.html#WikipediaArticle.first_sentence"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wikipedia_converter.WikipediaArticle.first_sentence" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="wikipedia_converter.WikipediaArticle.preprocess">
 <span class="sig-name descname"><span class="pre">preprocess</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wikipedia_converter.html#WikipediaArticle.preprocess"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wikipedia_converter.WikipediaArticle.preprocess" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Method to process the french accents and non compatible chars</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="wikipedia_converter.WikipediaArticle.produce_pdf">
 <span class="sig-name descname"><span class="pre">produce_pdf</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wikipedia_converter.html#WikipediaArticle.produce_pdf"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wikipedia_converter.WikipediaArticle.produce_pdf" title="Permalink to this definition">#</a></dt>
+<dd><p>Method to produce the final pdf</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wikipedia_converter.WikipediaArticle.remove_references">
+<span class="sig-name descname"><span class="pre">remove_references</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wikipedia_converter.html#WikipediaArticle.remove_references"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wikipedia_converter.WikipediaArticle.remove_references" title="Permalink to this definition">#</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="wikipedia_converter.decode_french_accents">
-<span class="sig-prename descclassname"><span class="pre">wikipedia_converter.</span></span><span class="sig-name descname"><span class="pre">decode_french_accents</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">accents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wikipedia_converter.html#decode_french_accents"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wikipedia_converter.decode_french_accents" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="wikipedia_converter.encode_french_accents">
-<span class="sig-prename descclassname"><span class="pre">wikipedia_converter.</span></span><span class="sig-name descname"><span class="pre">encode_french_accents</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">accents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wikipedia_converter.html#encode_french_accents"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wikipedia_converter.encode_french_accents" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="wikipedia_converter.main">
@@ -267,7 +315,7 @@
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">src</div>
+                <div class="title">&lt;no title&gt;</div>
                 
               </div>
             </a>
@@ -311,14 +359,18 @@
 <li><a class="reference internal" href="#">wikipedia_converter module</a><ul>
 <li><a class="reference internal" href="#wikipedia_converter.WikipediaArticle"><code class="docutils literal notranslate"><span class="pre">WikipediaArticle</span></code></a><ul>
 <li><a class="reference internal" href="#wikipedia_converter.WikipediaArticle.accents"><code class="docutils literal notranslate"><span class="pre">WikipediaArticle.accents</span></code></a></li>
+<li><a class="reference internal" href="#wikipedia_converter.WikipediaArticle.all_sentences_but_first"><code class="docutils literal notranslate"><span class="pre">WikipediaArticle.all_sentences_but_first()</span></code></a></li>
+<li><a class="reference internal" href="#wikipedia_converter.WikipediaArticle.available_lang"><code class="docutils literal notranslate"><span class="pre">WikipediaArticle.available_lang</span></code></a></li>
 <li><a class="reference internal" href="#wikipedia_converter.WikipediaArticle.convert_to_latex"><code class="docutils literal notranslate"><span class="pre">WikipediaArticle.convert_to_latex()</span></code></a></li>
+<li><a class="reference internal" href="#wikipedia_converter.WikipediaArticle.decode_accents"><code class="docutils literal notranslate"><span class="pre">WikipediaArticle.decode_accents()</span></code></a></li>
+<li><a class="reference internal" href="#wikipedia_converter.WikipediaArticle.encode_accents"><code class="docutils literal notranslate"><span class="pre">WikipediaArticle.encode_accents()</span></code></a></li>
 <li><a class="reference internal" href="#wikipedia_converter.WikipediaArticle.fetch_content"><code class="docutils literal notranslate"><span class="pre">WikipediaArticle.fetch_content()</span></code></a></li>
+<li><a class="reference internal" href="#wikipedia_converter.WikipediaArticle.first_sentence"><code class="docutils literal notranslate"><span class="pre">WikipediaArticle.first_sentence()</span></code></a></li>
 <li><a class="reference internal" href="#wikipedia_converter.WikipediaArticle.preprocess"><code class="docutils literal notranslate"><span class="pre">WikipediaArticle.preprocess()</span></code></a></li>
 <li><a class="reference internal" href="#wikipedia_converter.WikipediaArticle.produce_pdf"><code class="docutils literal notranslate"><span class="pre">WikipediaArticle.produce_pdf()</span></code></a></li>
+<li><a class="reference internal" href="#wikipedia_converter.WikipediaArticle.remove_references"><code class="docutils literal notranslate"><span class="pre">WikipediaArticle.remove_references()</span></code></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#wikipedia_converter.decode_french_accents"><code class="docutils literal notranslate"><span class="pre">decode_french_accents()</span></code></a></li>
-<li><a class="reference internal" href="#wikipedia_converter.encode_french_accents"><code class="docutils literal notranslate"><span class="pre">encode_french_accents()</span></code></a></li>
 <li><a class="reference internal" href="#wikipedia_converter.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
 </ul>
 </li>
