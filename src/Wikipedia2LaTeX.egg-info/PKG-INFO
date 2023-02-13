@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: Wikipedia2LaTeX
+Version: 0.0.1
+Summary: A small tool to convert Wikipedia articles to pdf LaTeX documents
+Author-email: "L.E.Charles" <charles.lucas4665@gmail.com>
+Project-URL: Homepage, https://github.com/charlesl46/Wikipedia2LaTeX/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Wikipedia2LaTeX
+## _Create fancy pdf LaTeX documents from wikipedia articles_
+
+## Installation
+
+Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
+
+Install the dependencies and devDependencies and start the server.
+
+``` pip install Wikipedia2LaTeX
+```
+
+## License
+
+MIT
+
+

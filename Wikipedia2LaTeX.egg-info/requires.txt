@@ -1,7 +1,0 @@
-requests
-unidecode
-pypandoc
-wikipedia
-urllib
-tqdm
-nltk

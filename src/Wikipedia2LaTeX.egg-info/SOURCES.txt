@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/Wikipedia2LaTeX/__init__.py
+src/Wikipedia2LaTeX/main.py
+src/Wikipedia2LaTeX/wikipedia_converter.py
+src/Wikipedia2LaTeX.egg-info/PKG-INFO
+src/Wikipedia2LaTeX.egg-info/SOURCES.txt
+src/Wikipedia2LaTeX.egg-info/dependency_links.txt
+src/Wikipedia2LaTeX.egg-info/top_level.txt
