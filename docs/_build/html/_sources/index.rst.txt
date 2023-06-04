@@ -1,31 +1,28 @@
-Wikipedia2LaTeX's documentation
-===============================
+PyWikipedia2LaTeX's documentation
+=================================
 
 .. admonition:: Note
-   :class: note
+   :class: caution
 
-   This package is under active maintenance
+   This package is under maintenance and isn't active on PyPI.
 
 Installation
 ------------
 
-To use Wikipedia2LaTeX, first install it using pip:
+To use PyW2L, first install it using pip:
 
 .. code-block:: console
 
-   (.venv) $ pip install Wikipedia2LaTeX
+   (.venv) $ pip install PyWikipedia2LaTeX
 
 Usage
 -----
 
-.. code-block:: console
-
-   (.venv) $ command
-
-Check out the :doc:`usage` section for further information.
+Check out the  section for further information.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   
+
    modules
+
